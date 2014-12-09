@@ -4,8 +4,6 @@
  */
 
 function valid_phone(phone) {
-    var pattern = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-
     var phone = phone.replace(/[^0-9]/g, "");
     var view = phone;
     if (phone.length >= 11) {
