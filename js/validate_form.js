@@ -21,7 +21,7 @@ $(document).on("change", "form input", function(event){
     if (valid == 'yes' && value == '') {
         $(this).addClass('error');
 
-    } else if (valid == 'email' && !/^[\.A-z0-9_\-\+]+[@][A-z0-9_\-]+([.][A-z0-9_\-]+)+[A-z]{1,4}$/.test(value)) {
+    } else if (valid == 'email' && !/^[\.A-z0-9_\-\+]+[@][A-z0-9_\-]+(([.][A-z0-9_\-]+)+)?[.][A-z]{2,4}$/.test(value)) {
         $(this).addClass('error');
 
     } else if (valid == 'phone') {
